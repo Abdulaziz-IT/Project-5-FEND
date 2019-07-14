@@ -232,12 +232,14 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+
 .inside header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 88%;
@@ -246,39 +248,11 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
-}
-@media (max-width: 783px) {
-  #breadcrumb {
-    width: 100%;
-  }
-
-
-  .inside #map-container{
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-
-  #restaurant-container , #reviews-container {
-    width: 100%;
-  }
-
-  .inside #footer {
-    width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 550px) {
-  .inside #map {
-    position: absolute;
-  }
 }
 
 .inside #footer {
@@ -289,7 +263,7 @@ nav h1 a {
 
 #restaurant-name {
   color: #f18200;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
@@ -299,7 +273,7 @@ nav h1 a {
 }
 
 #restaurant-img {
-	width: 90%;
+  width: 90%;
 }
 
 #restaurant-address {
@@ -317,19 +291,20 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
 
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
-  top:100px;
+  padding: 100px 20px 30px;
+  width: 45%;
+  top: 100px;
 }
 
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 #reviews-container h2 {
@@ -340,6 +315,21 @@ nav h1 a {
   padding-bottom: 1pt;
 }
 
+@media (max-width: 750px) {
+  .inside #map-container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
+  .inside #footer {
+    width: 86%;
+  }
+}
+
 #reviews-list {
   margin: 0;
   padding: 0;
@@ -347,14 +337,16 @@ nav h1 a {
 
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 10px 20px 20px;
   position: relative;
-  width: 85%;
+  width: 80%;
+  border-radius: 20px/60px;
+  box-shadow: inset 0 0 3px 4px #f58500;
 }
 
 #reviews-list li p {
